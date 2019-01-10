@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="theme-color" content="#34bf4e" />
+  <link rel="stylesheet" href="css/main.css">
+  <script src="./js/moment.min.js"></script>
+  <script src="./js/moment-locale-pl.js"></script>
+  <script src="./js/dom.min.js"></script>
+  <script type="module" src="./js/app.js?v=4"></script>
+  <title>Paragon</title>
+</head>
+<body>
+  <div id="topBar" class="clearfix">
+    <div id="title">Paragon</div>
+    <div id="thisMonth"><span id='thisMonthValue'>0.00</span>zł</div>
+  </div>
+  <div id="listContainer">
+    <div class="list"></div>
+  </div>
+  <div id="addProduct">
+    <form action="">
+      <input id="addProductName" type="text" size="3" placeholder="Produkt">
+      <div id="addProductQuantityBox">
+        <div id="quantityMinus">-</div>
+        <input id="addProductQuantity" type="number" value="1" min="1">
+        <div id="quantityPlus">+</div>
+      </div>
+      <span>x</span>
+      <input id="addProductPrice" type="text" size="2" pattern="\d{1,}((\.|,)\d{1,2})?" autocomplete="off" placeholder="Cena">
+      <input id="add" type="submit" value="+">
+    </form>
+  </div>
+</body>
+</html>
