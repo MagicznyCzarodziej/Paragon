@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import Product from './controller.js';
 
 export default (app) => {

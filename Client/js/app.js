@@ -8,8 +8,6 @@ window.onload = async () => {
   listCurrentMonth();
 }
 
-
-
 async function listCurrentMonth() {
   const date = moment().format('YYYY-MM');
   const response = await fetch(config.api + `date/${date}`);
@@ -21,7 +19,7 @@ async function listCurrentMonth() {
     spentThisMonth += product.price * product.quantity;
 
     const week = getWeekNumber(product.date);
-    if (week != lastWeekNumber && week > 1) {
+    if (week != lastWeekNumber && week > 2) {
       const month =  moment().format('MMMM');
       const template = `
         <div class="monthDivider" style="overflow:auto">
