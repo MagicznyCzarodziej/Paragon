@@ -1,8 +1,8 @@
 <template>
   <v-ons-page>
-    <v-ons-toolbar>
+    <!-- <v-ons-toolbar>
       Paragon
-    </v-ons-toolbar>
+    </v-ons-toolbar> -->
     <v-ons-tabbar swipeable
       :tabs="tabs"
       :visible="false"
@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,4 +50,14 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+html
+  height 100%
+  background-color #eee
+  font-size 15px
+  font-family sans-serif
+body
+  height 100%
+  margin 0
+
 </style>
